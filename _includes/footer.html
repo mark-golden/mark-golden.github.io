@@ -24,12 +24,6 @@
   Site last updated {{ "now" | date: '%Y-%m-%d' }}, <a href="/sitemap/" style="text-transform: uppercase;">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a><br />
   <span id="goatcounter-visits">Site visits: </span>
 </div>
-<script>
-  window.goatcounter = window.goatcounter || {};
-  window.goatcounter.visit_count = window.goatcounter.visit_count || function(options) {
-    (window.goatcounter.vc_calls = window.goatcounter.vc_calls || []).push(options);
-  };
-  window.goatcounter.visit_count({append: '#goatcounter-visits', path: 'TOTAL'});
-</script>
 <script data-goatcounter="https://gaoruize.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+        async src="//gc.zgo.at/count.js"
+        onload="window.goatcounter.visit_count({append: '#goatcounter-visits', path: 'TOTAL'})"></script>
