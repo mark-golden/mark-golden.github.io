@@ -25,3 +25,6 @@ main:
 
   - title: "CV"
     url: /cv/
+
+  - title: "Stats"
+    url: /stats/
