@@ -22,6 +22,14 @@
 <div class="page__footer-copyright">
   &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
   Site last updated {{ "now" | date: '%Y-%m-%d' }}, <a href="/sitemap/" style="text-transform: uppercase;">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a><br />
-  <span id="busuanzi_container_site_pv">Site views: <span id="busuanzi_value_site_pv"></span></span> | <span id="busuanzi_container_site_uv">Visitors: <span id="busuanzi_value_site_uv"></span></span>
+  <span id="goatcounter-visits">Site visits: </span>
 </div>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+  window.goatcounter = window.goatcounter || {};
+  window.goatcounter.visit_count = window.goatcounter.visit_count || function(options) {
+    (window.goatcounter.vc_calls = window.goatcounter.vc_calls || []).push(options);
+  };
+  window.goatcounter.visit_count({append: '#goatcounter-visits', path: 'TOTAL'});
+</script>
+<script data-goatcounter="https://gaoruize.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
