@@ -17,6 +17,12 @@ main:
   - title: "Research Themes"
     url: /research-themes/
 
+  - title: "Honor"
+    url: /honors/
+
+  - title: "Grants"
+    url: /grants/
+
   - title: "Talks"
     url: /talks/    
 

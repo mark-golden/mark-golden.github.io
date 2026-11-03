@@ -7,8 +7,6 @@ redirect_from:
   - /preprints/
 ---
 
-按完成年份整理的工作论文列表；部分条目暂无公开链接，待可获取后再补充。
-
 ## 2026
 
 - Ruize Gao, Feng Xiao, Jinpu Li, Ke Tang, and Shaoze Cui. "Theory-guided relational learning for data product pricing: An interpretable meta-path-guided graph neural network approach." (Submitted to *Management Science*)
