@@ -1,7 +1,7 @@
 ---
 title: "Dynamic stacking ensemble learning with investor knowledge representations for stock market index prediction based on multi-source financial data"
 collection: publications
-category: preprints
+category: workingpaper
 permalink: /publication/2025-01-01-dynamic-stacking-ensemble-stock-index-prediction
 excerpt: 'This paper proposes a two-stage dynamic stacking ensemble model that builds investor-knowledge-informed feature representations from global stock indices, industrial indices, and financial news, then dynamically selects the best meta-classifier per time window; applied to major Chinese stock indices, it outperforms competing models by 1.42-7.94% in accuracy with a higher cumulative return and Sharpe ratio.'
 date: 2025-01-01
