@@ -1,0 +1,36 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
+
+    {% if post.venue %}
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% endif %}
+
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
+    {% endif %}
+
+    {% assign download_label = "Download Paper" %}
+    {% if post.category == "books" %}
+      {% assign download_label = "Book Info" %}
+    {% endif %}
+
+    {% if post.citation and post.paperurl != blank %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">{{ download_label }}</a></p>
+    {% elsif post.citation %}
+      <p>Recommended citation: {{ post.citation }}</p>
+    {% elsif post.paperurl != blank %}
+      <p><a href="{{ post.paperurl }}">{{ download_label }}</a></p>
+    {% endif %}
+
+  </article>
+</div>
