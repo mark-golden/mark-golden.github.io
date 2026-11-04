@@ -11,7 +11,9 @@
 
     <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
 
-    {% if post.venue %}
+    {% if post.category == "patents" %}
+      <p>China Patent {{ post.venue }}, granted {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.venue %}
       <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% endif %}
 
@@ -22,6 +24,8 @@
     {% assign download_label = "Download Paper" %}
     {% if post.category == "books" %}
       {% assign download_label = "Book Info" %}
+    {% elsif post.category == "patents" %}
+      {% assign download_label = "Patent Info" %}
     {% endif %}
 
     {% if post.citation and post.paperurl != blank %}
