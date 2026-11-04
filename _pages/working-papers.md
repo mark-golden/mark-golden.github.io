@@ -9,7 +9,7 @@ redirect_from:
 
 ## 2026
 
-- Ruize Gao, Feng Xiao, Jinpu Li, Ke Tang, and Shaoze Cui. "Theory-guided relational learning for data product pricing: An interpretable meta-path-guided graph neural network approach." (Submitted to *Management Science*)
+- [Ruize Gao, Feng Xiao, Jinpu Li, Ke Tang, and Shaoze Cui. "Theory-guided relational learning for data product pricing: An interpretable meta-path-guided graph neural network approach."](https://arxiv.org/abs/2611.04508) (arXiv:2611.04508; Submitted to *Management Science*)
 - 周新荃，高瑞泽，国欣然，付亚东，汤珂. "可控匿名视角下的数字人民币动态风控机制研究." (R&R in *现代金融研究*)
 - 王淑婕，韩立岩，高瑞泽，杨晓光. "认知外包还是人机互补？——生成式人工智能与分析师信息生产." (Submitted to *管理世界*)
 
